@@ -1,4 +1,4 @@
-![example](results/ICRA2024/others/soft-fixture-scenarios.png)
+![example](pic/teaser.png)
 
 This repo provides code for the paper - Soft Fixtures: Practical Caging-Based Manipulation of Rigid and Deformable Objects
 
