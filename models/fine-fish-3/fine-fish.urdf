@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<robot name="fish" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="head">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://fine-fish/head2.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://fine-fish/head2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="body">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.86 0 -0.01"/>
+      <geometry>
+        <mesh filename="package://fine-fish/body2.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.86 0 -0.01"/>
+      <geometry>
+        <mesh filename="package://fine-fish/body2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint1" type="revolute">
+    <parent link="head"/>
+    <child link="body"/>
+    <origin rpy="0 0 0" xyz="-0.3 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" lower="-1.5" upper="1.5" velocity="0.2"/>
+  </joint>
+
+</robot>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot name="hook">
+
+  <link name="hook">
+    <visual>
+      <geometry>
+        <mesh filename="package://triple_hook/triple_hook.dae" scale="0.2 0.2 0.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://triple_hook/triple_hook.stl" scale="0.2 0.2 0.2"/>
+      </geometry>
+    </collision>
+  </link>
+
+</robot>
